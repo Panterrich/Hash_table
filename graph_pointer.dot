@@ -1,0 +1,45 @@
+digraph G {
+graph [bgcolor = Snow2]
+rankdir = LR;
+	1 [shape = plaintext, label =<
+	<table>
+	<tr>
+		<td colspan="3"> 15 | 10 </td>
+	 </tr>
+	 <tr>
+		 <td> (nil) </td>
+		 <td> 0x564b64313ed0 </td>
+		 <td> 0x564b64313ef0 </td>
+	 </tr>
+	</table>>, style = filled, color = deepskyblue2, fillcolor = lightskyblue]
+	2 [shape = plaintext, label =<
+	<table>
+	<tr>
+		<td colspan="3"> 20 | 30 </td>
+	 </tr>
+	 <tr>
+		 <td> 0x564b64313ed0 </td>
+		 <td> 0x564b64313ef0 </td>
+		 <td> 0x564b64313eb0 </td>
+	 </tr>
+	</table>>, style = filled, color = deepskyblue2, fillcolor = lightskyblue]
+	3 [shape = plaintext, label =<
+	<table>
+	<tr>
+		<td colspan="3"> 1 | 20 </td>
+	 </tr>
+	 <tr>
+		 <td> 0x564b64313ef0 </td>
+		 <td> 0x564b64313eb0 </td>
+		 <td> (nil) </td>
+	 </tr>
+	</table>>, style = filled, color = deepskyblue2, fillcolor = lightskyblue]
+	1 -> 2 [color = deepskyblue2]; 
+	2 -> 1 [color = deepskyblue2]; 
+	2 -> 3 [color = deepskyblue2]; 
+	3 -> 2 [color = deepskyblue2]; 
+	HEAD [style = filled, color = black, fillcolor = salmon1]; 
+	TAIL [style = filled, color = black, fillcolor = salmon1]; 
+	HEAD -> 1 [color = deeppink]; 
+	TAIL -> 3 [color = deeppink]; 
+}
