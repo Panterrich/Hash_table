@@ -46,6 +46,9 @@ class Hash_table
 
         void unit_test(hash_func<char*>::func hash_name, const struct Text& text, const char* path, FILE* file);
         void fill(const struct Text& text);
+
+        void translate(char* string);
+        void translate(const Text& text);
 };
 
 unsigned int hash_const(char* key);

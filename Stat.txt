@@ -1,72 +1,16 @@
 
 
-Data/hash const.dat
-Average value:      12
-Variance:           83338.9
-Standard deviation: 288.685
+Data/hash murmur.dat
+Average value:      1.49759
+Variance:           1.46348
+Standard deviation: 1.20975
 Min:                0
-Max                 6513
-
-
-Data/hash len.dat
-Average value:      12
-Variance:           10119.9
-Standard deviation: 100.597
-Min:                0
-Max                 1100
-
-
-Data/hash sum.dat
-Average value:      12
-Variance:           78.8366
-Standard deviation: 8.879
-Min:                0
-Max                 41
-
-
-Data/hash code.dat
-Average value:      12
-Variance:           4893.93
-Standard deviation: 69.9566
-Min:                0
-Max                 727
-
-
-Data/hash rol.dat
-Average value:      12
-Variance:           21.4823
-Standard deviation: 4.6349
-Min:                3
-Max                 27
-
-
-Data/hash ror.dat
-Average value:      12
-Variance:           31.5177
-Standard deviation: 5.61406
-Min:                2
-Max                 32
-
-
-Data/hash std.dat
-Average value:      12
-Variance:           12.9311
-Standard deviation: 3.59598
-Min:                3
-Max                 28
+Max                 7
 
 
 Data/hash crc.dat
-Average value:      12
-Variance:           13.3524
-Standard deviation: 3.65409
-Min:                2
-Max                 26
-
-
-Data/hash murmur.dat
-Average value:      12
-Variance:           13.7618
-Standard deviation: 3.70969
-Min:                4
-Max                 25
+Average value:      1.49759
+Variance:           3.39541
+Standard deviation: 1.84266
+Min:                0
+Max                 50

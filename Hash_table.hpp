@@ -98,9 +98,19 @@ void Hash_table<KeyT, DataT> :: set_func(typename hash_func<KeyT>::func hash)
 template <typename KeyT, typename DataT>
 DataT Hash_table<KeyT, DataT> :: get_value(KeyT key)
 {
-    if (size_ == 0 || hash_ == nullptr) return Type_traits<DataT>::Poison;
+    if (size_ == 0 || hash_ == nullptr) return Type_traits<DataT>::Poison();
 
-    return keys_[hash(key) % size_].find_value(key)->value;
+    List_pointer_t<KeyT, DataT>* element = keys_[hash(key) % size_].find_value(key);
+
+    if (element != nullptr)
+    {
+        return element->value;
+    }
+    
+    else
+    {
+        return Type_traits<DataT>::Poison();
+    }
 }
 
 template <typename KeyT, typename DataT>
