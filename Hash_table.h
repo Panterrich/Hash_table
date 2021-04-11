@@ -61,4 +61,6 @@ unsigned int hash_crc(char* key);
 unsigned int hash_std(char* key);
 unsigned int MurmurHash2 (char * key);
 
+char* string_tolower(char* string);
+
 #endif
