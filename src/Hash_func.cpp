@@ -148,7 +148,7 @@ void Hash_table<char*, char*> :: translate(char* string)
 template <>
 void Hash_table<char*, char*> :: translate(const Text& text)
 {
-    FILE* page = fopen("translation.html", "w");
+    FILE* page = fopen("docs/translation.html", "w");
 
     fprintf(page, "<!DOCTYPE html>\n"
                   "<html>\n"

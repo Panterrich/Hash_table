@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 
     struct Text text = {};
 
-    FILE* file_dict = fopen("dict_full.txt", "rb");
+    FILE* file_dict = fopen("docs/dict_full.txt", "rb");
 
     struct Text dict = {};
     Create_text(file_dict, &dict);
@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
 
     Free_memory(&dict);
 
-   system("opera translation.html");
+    system("opera docs/translation.html");
 
     return 0;
 }
