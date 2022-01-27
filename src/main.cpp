@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 
     struct Text text = {};
 
-    FILE* file_dict = fopen("dict.txt", "rb");
+    FILE* file_dict = fopen("/docs/dict.txt", "rb");
 
     struct Text dict = {};
     Create_text(file_dict, &dict);
